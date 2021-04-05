@@ -138,6 +138,7 @@ fn write_svg(path: &[(usize, usize)]) {
             .set("fill", "none")
             .set("stroke", stroke)
             .set("stroke-width", 2)
+            .set("stroke-linecap", "round")
             .set("d", data);
 
         document = document.add(path);
